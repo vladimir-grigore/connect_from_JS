@@ -29,4 +29,3 @@ knex.insert([{first_name: args[0], last_name: args[1], birthdate: args[2]}], 'id
         process.exit();
       });
   });
-
