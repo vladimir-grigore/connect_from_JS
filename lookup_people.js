@@ -15,11 +15,15 @@ client.connect((err) => {
   if(err) {
     return console.error("Connection error", err);
   }
-  client.query("SELECT * FROM famous_people WHERE last_name = $1", [arg], (err, result) => {
-    if(err) {
-      return console.error("Error running query", err);
-    }
-   console.log(result.rows[0]);
-   client.end();
-  });
+  select_person(arg);
 });
+  
+function select_person(person) {
+  client.query("SELECT * FROM famous_people WHERE last_name = $1", [person], (err, result) => {
+  if(err) {
+    return console.error("Error running query", err);
+  }
+  console.log(result.rows[0]);
+    client.end();
+  });
+}
