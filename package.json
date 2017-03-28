@@ -1,0 +1,23 @@
+{
+  "name": "connect_from_JS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimir-grigore/connect_from_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladimir-grigore/connect_from_JS/issues"
+  },
+  "homepage": "https://github.com/vladimir-grigore/connect_from_JS#readme",
+  "dependencies": {
+    "pg": "^6.1.5"
+  }
+}
